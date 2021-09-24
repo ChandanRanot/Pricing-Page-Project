@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --linear-gradient-1: hsl(236, 72%, 79%); 
+    --linear-gradient-2: hsl(237, 63%, 64%);
+    --very-light-grayish-blue: hsl(240, 78%, 98%);
+    --light-grayish-blue: hsl(234, 14%, 74%);
+    --grayish-blue: hsl(233, 13%, 49%);
+    --dark-grayish-blue: hsl(232, 13%, 33%);
+}
+
+body {
+    font-size: 15px;
+    font-family: "montserrat" , sans-serif;
+    background-color: var(--very-light-grayish-blue);
+}
+main{
+    background: url("./images/bg-top.svg") no-repeat 250px 0;
+}
+
+.pricing-page {
+    text-align: center;
+    padding: 68px 25px;
+}
+
+.heading h2 {
+    font-size: 2.2rem;
+    color: var(--grayish-blue);
+}
+
+.toggle{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 96px
+}
+.option{
+    font-size: 1.1rem;
+    color: var(--light-grayish-blue);
+    margin-top: 5px;
+}
+.annual{
+    margin-right: 80px;
+}
+.month{
+    margin-left: 30px;
+}
+
+.switch{
+    position: absolute;
+}
+.switch input[type="checkbox"] {
+    position: relative;
+    width: 50px;
+    height: 30px;
+    appearance: none;
+    background: linear-gradient(var(--linear-gradient-1),var(--linear-gradient-2));
+    outline: none;
+    border-radius: 16px;
+}
+
+input[type="checkbox"]:before{
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin: 3.2px 4px 2px 4px;
+    background: #ffffff;
+}
+input:checked[type="checkbox"]:before{
+    left: 18px;
+}
+
+.plan-features{
+    list-style: none;
+}
+
+.plan{
+    padding: 35px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.plan-heading{
+    color: var(--grayish-blue);
+}
+
+.pro .plan-heading, .pro .plan-price, .pro .plan-features .plan-item {
+    color: var(--very-light-grayish-blue);
+}
+.plan-price{
+    font-size: 4.5rem;
+    padding-bottom: 25px;
+    padding-top: 24px;
+    color: var(--dark-grayish-blue);
+    border-bottom: 1px solid var(--light-grayish-blue);
+}
+.dollar{
+    font-size: 2rem;
+}
+.plan-item{
+    padding: 26px 0;
+    font-size: 1rem;
+    color: var(--grayish-blue);
+    border-bottom: 1px solid var(--light-grayish-blue);
+}
+
+.basic {
+    background-color: #ffffff;
+    
+}
+.pro{
+    background: linear-gradient(var(--linear-gradient-1),var(--linear-gradient-2));
+}
+.master{
+    background-color: #ffffff;
+}
+
+.button1{
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 26px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 16px 0;
+    color: var(--very-light-grayish-blue);
+    background-image: linear-gradient(to right, var(--linear-gradient-1),var(--linear-gradient-2)); 
+    border: none;  
+    word-spacing: 1px;
+}
+
+.learn-more{
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 26px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 16px 0;
+    border: none;
+    color: var(--linear-gradient-2);
+}
+
+@media(min-width: 762px){
+    
+    main{
+        background: url("./images/bg-top.svg"),url("./images/bg-bottom.svg");
+        background-repeat: no-repeat, no-repeat;
+        background-position: top right, bottom left;
+    }
+    .pricing-page{
+        padding: 52px 0;
+    }
+
+    .heading h2{
+        font-size: 1.5rem ;
+    }
+    .option{
+         font-size: .8rem;
+    }
+     
+    .switch input[type="checkbox"]{
+        width: 47px;
+        height: 25px;
+    }
+
+    input[type="checkbox"]:before{
+        width: 20px;
+        height: 19px;
+    }
+
+    .toggle{
+        margin-bottom: 75px;
+    }
+
+    .plans{
+        display: flex;
+        justify-content: center;
+    }
+
+    .plan-price{
+        font-size: 3.5rem;
+    }
+    .dollar{
+        font-size: 1.8rem;
+    }
+
+    .plan-heading{
+        font-size: 1rem;
+    }
+    .plan-item{
+        font-size: .8rem;
+        padding: 16px;
+    }
+    .button1{
+        font-size: .8rem;
+        padding: 10px 0;
+    }
+    .learn-more{
+        font-size: .8rem;
+        padding: 10px 0;
+    }
+
+    .basic, .master{
+        height: 25rem;
+        align-self: center;
+    }
+    .pro{
+        height: 27rem;
+    }
+
+
+    
+}
