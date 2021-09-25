@@ -50,6 +50,10 @@ main{
     margin-left: 30px;
 }
 
+#basic-month, #pro-month, #master-month{
+    display: none;
+}
+
 .switch{
     position: absolute;
 }
@@ -112,13 +116,16 @@ input:checked[type="checkbox"]:before{
 
 .basic {
     background-color: #ffffff;
+    width: 22%;
     
 }
 .pro{
     background: linear-gradient(var(--linear-gradient-1),var(--linear-gradient-2));
+    width: 23%;
 }
 .master{
     background-color: #ffffff;
+    width: 22%;
 }
 
 .button1{
