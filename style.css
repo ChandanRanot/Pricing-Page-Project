@@ -116,16 +116,16 @@ input:checked[type="checkbox"]:before{
 
 .basic {
     background-color: #ffffff;
-    width: 22%;
+    width: 100%;
     
 }
 .pro{
     background: linear-gradient(var(--linear-gradient-1),var(--linear-gradient-2));
-    width: 23%;
+    width: 100%;
 }
 .master{
     background-color: #ffffff;
-    width: 22%;
+    width: 100%;
 }
 
 .button1{
@@ -215,9 +215,11 @@ input:checked[type="checkbox"]:before{
     .basic, .master{
         height: 25rem;
         align-self: center;
+        width: 22%;
     }
     .pro{
         height: 27rem;
+        width: 23%;
     }
 
 
